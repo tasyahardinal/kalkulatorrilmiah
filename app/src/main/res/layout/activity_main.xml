@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFC0CB">
+
+
+    <TextView
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR"
+        android:textColor="#800000"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/angka"
+        android:hint="Masukkan Angka"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_below="@id/cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/sin"
+        android:text="Sin"
+        android:textColor="#800000"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/angka"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <Button
+        android:id="@+id/cos"
+        android:text="Cos"
+        android:textColor="#800000"
+        android:layout_below="@id/angka"
+        android:layout_toRightOf="@+id/sin"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <Button
+        android:id="@+id/tan"
+        android:text="Tan"
+        android:textColor="#800000"
+        android:layout_below="@id/angka"
+        android:layout_toRightOf="@id/cos"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <Button
+        android:id="@+id/csc"
+        android:text="Csc"
+        android:layout_marginLeft="80dp"
+        android:textColor="#800000"
+        android:layout_below="@id/sin"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <Button
+        android:id="@+id/sec"
+        android:text="Sec"
+        android:textColor="#800000"
+        android:layout_below="@id/cos"
+        android:layout_toRightOf="@id/csc"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <Button
+        android:id="@+id/cot"
+        android:text="Cot"
+        android:textColor="#800000"
+        android:layout_below="@id/tan"
+        android:layout_toRightOf="@id/sec"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <Button
+        android:id="@+id/log"
+        android:text="Log"
+        android:textColor="#800000"
+        android:layout_below="@id/csc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:text="0.0"
+        android:textSize="40sp"
+        android:textColor="#800000"
+        android:layout_below="@id/log"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log"
+        android:layout_marginTop="-23dp"
+        android:src="@drawable/bluee" />
+
+
+</RelativeLayout>
+
